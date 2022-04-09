@@ -2,7 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    text-transform: capitalize;
     font-family: 'Red Hat Display';
+}
+
+.service-box{
+    box-shadow: 0px 0px 0.6vw 0vw rgb(0 0 0 / 20%);
+    border-radius: 2vw;
 }
 
