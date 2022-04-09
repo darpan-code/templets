@@ -1,0 +1,22 @@
+{
+  "name": "templets",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/darpan-code/templets.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/darpan-code/templets/issues"
+  },
+  "homepage": "https://github.com/darpan-code/templets#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.0.23"
+  }
+}
