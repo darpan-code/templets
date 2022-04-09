@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Red Hat Display';
-    user-select: none;
+    /* user-select: none; */
 }
 
 .service-box{
@@ -17,3 +17,8 @@ hr{
     opacity: 1;
 }
 
+.testimonial-head{
+    position: absolute;
+    top: 160vw;
+    right: 20vw;
+}
