@@ -3,10 +3,17 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Red Hat Display';
+    user-select: none;
 }
 
 .service-box{
     box-shadow: 0px 0px 0.6vw 0vw rgb(0 0 0 / 20%);
     border-radius: 2vw;
+}
+
+hr{
+    height: .3vw !important;
+    border-radius: 10vw;
+    opacity: 1;
 }
 

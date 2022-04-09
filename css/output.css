@@ -468,9 +468,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-backdrop-sepia:  ;
 }
 
-.my-\[20vw\] {
-  margin-top: 20vw;
-  margin-bottom: 20vw;
+.my-\[10vw\] {
+  margin-top: 10vw;
+  margin-bottom: 10vw;
 }
 
 .ml-\[5vw\] {
@@ -493,10 +493,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-left: 4vw;
 }
 
-.mt-\[10vw\] {
-  margin-top: 10vw;
-}
-
 .mt-\[14vw\] {
   margin-top: 14vw;
 }
@@ -505,12 +501,24 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 1.3vw;
 }
 
+.mt-\[5vw\] {
+  margin-top: 5vw;
+}
+
 .mt-\[1vw\] {
   margin-top: 1vw;
 }
 
-.mt-\[5vw\] {
-  margin-top: 5vw;
+.mt-\[1\.5vw\] {
+  margin-top: 1.5vw;
+}
+
+.mt-\[1\.2vw\] {
+  margin-top: 1.2vw;
+}
+
+.mt-\[4vw\] {
+  margin-top: 4vw;
 }
 
 .flex {
@@ -529,16 +537,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 4vw;
 }
 
-.h-\[15vw\] {
-  height: 15vw;
+.h-\[22vw\] {
+  height: 22vw;
+}
+
+.h-\[2vw\] {
+  height: 2vw;
+}
+
+.h-9 {
+  height: 2.25rem;
 }
 
 .h-\[20vw\] {
   height: 20vw;
-}
-
-.h-\[22vw\] {
-  height: 22vw;
 }
 
 .w-\[12vw\] {
@@ -561,40 +573,40 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 40vw;
 }
 
-.w-\[10vw\] {
-  width: 10vw;
-}
-
 .w-\[50vw\] {
   width: 50vw;
-}
-
-.w-\[60vw\] {
-  width: 60vw;
-}
-
-.w-\[70vw\] {
-  width: 70vw;
-}
-
-.w-\[20vw\] {
-  width: 20vw;
 }
 
 .w-\[80vw\] {
   width: 80vw;
 }
 
-.w-\[38vw\] {
-  width: 38vw;
+.w-\[38\.5vw\] {
+  width: 38.5vw;
 }
 
 .w-\[14vw\] {
   width: 14vw;
 }
 
-.w-\[38\.5vw\] {
-  width: 38.5vw;
+.w-\[2vw\] {
+  width: 2vw;
+}
+
+.w-\[20vw\] {
+  width: 20vw;
+}
+
+.w-\[10vw\] {
+  width: 10vw;
+}
+
+.w-\[9vw\] {
+  width: 9vw;
+}
+
+.w-\[20px\] {
+  width: 20px;
 }
 
 .flex-col {
@@ -621,12 +633,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-radius: .5vw;
 }
 
-.rounded-\[1vw\] {
-  border-radius: 1vw;
-}
-
 .rounded-\[\.7vw\] {
   border-radius: .7vw;
+}
+
+.rounded {
+  border-radius: 0.25rem;
+}
+
+.rounded-full {
+  border-radius: 9999px;
+}
+
+.border-4 {
+  border-width: 4px;
 }
 
 .bg-\[\#0074D6\] {
@@ -639,9 +659,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(100 116 139 / var(--tw-bg-opacity));
 }
 
-.py-\[2vw\] {
-  padding-top: 2vw;
-  padding-bottom: 2vw;
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .py-\[1vw\] {
@@ -666,10 +686,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   text-align: center;
 }
 
-.align-middle {
-  vertical-align: middle;
-}
-
 .text-\[1\.5vw\] {
   font-size: 1.5vw;
 }
@@ -682,10 +698,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-size: 2vw;
 }
 
-.text-\[4vw\] {
-  font-size: 4vw;
-}
-
 .text-\[2\.7vw\] {
   font-size: 2.7vw;
 }
@@ -694,20 +706,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-size: 1.3vw;
 }
 
-.text-\[10vw\] {
-  font-size: 10vw;
+.text-\[4vw\] {
+  font-size: 4vw;
 }
 
 .text-\[1\.7vw\] {
   font-size: 1.7vw;
 }
 
-.font-medium {
-  font-weight: 500;
+.text-\[2\.5vw\] {
+  font-size: 2.5vw;
 }
 
-.font-semibold {
-  font-weight: 600;
+.font-medium {
+  font-weight: 500;
 }
 
 .font-bold {
@@ -736,12 +748,31 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.drop-shadow-xl {
-  --tw-drop-shadow: drop-shadow(0 20px 13px rgb(0 0 0 / 0.03)) drop-shadow(0 8px 5px rgb(0 0 0 / 0.08));
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+.text-gray-700 {
+  --tw-text-opacity: 1;
+  color: rgb(55 65 81 / var(--tw-text-opacity));
+}
+
+.text-\[\#5E5454\] {
+  --tw-text-opacity: 1;
+  color: rgb(94 84 84 / var(--tw-text-opacity));
+}
+
+.hover\:text-\[2\.6vw\]:hover {
+  font-size: 2.6vw;
 }
 
 .hover\:text-\[\#0074D6\]:hover {
   --tw-text-opacity: 1;
   color: rgb(0 116 214 / var(--tw-text-opacity));
+}
+
+.hover\:text-black:hover {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.hover\:text-blue-500:hover {
+  --tw-text-opacity: 1;
+  color: rgb(59 130 246 / var(--tw-text-opacity));
 }
