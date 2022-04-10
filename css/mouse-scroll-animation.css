@@ -2,6 +2,7 @@
 .icon-scroll:before {
     position: absolute;
     left: 50%;
+    top: 50vw;
 }
 .icon-scroll {
     width: 1.953vw;
