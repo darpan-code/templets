@@ -3,7 +3,43 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Red Hat Display';
+    scroll-behavior: smooth;
     /* user-select: none; */
+}
+
+.scrolled{
+    box-shadow: 0px 0px 0.6vw 0vw rgb(0 0 0 / 20%);
+    background: rgb(255, 255, 255);
+}
+
+
+.up-arrow{
+    width: 3vw;
+    height: 3vw;
+    border-radius: 50%;
+    background: #f8f9fa;
+    font-size: 1.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 2vw;
+    right: 2vw;
+    color: #000;
+    /* box-shadow: 0 0 1rem rgb(60 72 88 / 30%) !important; */
+    box-shadow: 0px 0px 0.6vw 0vw rgb(0 0 0 / 20%);
+}
+
+.up-arrow:hover{
+    background: #edf2f7a9;
+}
+
+.arrow-hide{
+    display: none;
+}
+
+.arrow-visible{
+    display: block;
 }
 
 .service-box{
