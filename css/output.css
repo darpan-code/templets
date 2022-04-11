@@ -835,6 +835,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-right: 2vw;
 }
 
+.pt-\[14vw\] {
+  padding-top: 14vw;
+}
+
+.pt-\[10vw\] {
+  padding-top: 10vw;
+}
+
+.pt-\[8vw\] {
+  padding-top: 8vw;
+}
+
 .text-center {
   text-align: center;
 }
