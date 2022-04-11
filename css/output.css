@@ -531,8 +531,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: 5vw;
 }
 
-.mt-\[4vw\] {
-  margin-top: 4vw;
+.mt-\[6vw\] {
+  margin-top: 6vw;
 }
 
 .ml-\[4vw\] {
@@ -559,6 +559,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 1vw;
 }
 
+.mt-\[4vw\] {
+  margin-top: 4vw;
+}
+
 .mr-\[1\.5vw\] {
   margin-right: 1.5vw;
 }
@@ -567,8 +571,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 3vw;
 }
 
-.mt-\[6vw\] {
-  margin-top: 6vw;
+.mt-\[1\.5vw\] {
+  margin-top: 1.5vw;
+}
+
+.mt-\[2\.5vw\] {
+  margin-top: 2.5vw;
 }
 
 .flex {
@@ -605,6 +613,18 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .h-\[14vw\] {
   height: 14vw;
+}
+
+.h-\[21vw\] {
+  height: 21vw;
+}
+
+.h-\[27vw\] {
+  height: 27vw;
+}
+
+.h-\[28vw\] {
+  height: 28vw;
 }
 
 .w-\[12vw\] {
@@ -683,6 +703,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 16vw;
 }
 
+.w-\[38vw\] {
+  width: 38vw;
+}
+
+.w-\[10vw\] {
+  width: 10vw;
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -751,6 +779,16 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-\[\#24717B\] {
   --tw-bg-opacity: 1;
   background-color: rgb(36 113 123 / var(--tw-bg-opacity));
+}
+
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#121212\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(18 18 18 / var(--tw-bg-opacity));
 }
 
 .object-cover {
@@ -877,6 +915,22 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-size: 1.8vw;
 }
 
+.text-\[20vw\] {
+  font-size: 20vw;
+}
+
+.text-\[1\.6vw\] {
+  font-size: 1.6vw;
+}
+
+.text-\[2\.2vw\] {
+  font-size: 2.2vw;
+}
+
+.text-\[1\.2vw\] {
+  font-size: 1.2vw;
+}
+
 .font-medium {
   font-weight: 500;
 }
@@ -887,6 +941,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .font-bold {
   font-weight: 700;
+}
+
+.font-light {
+  font-weight: 300;
 }
 
 .uppercase {
@@ -916,6 +974,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(94 84 84 / var(--tw-text-opacity));
 }
 
+.text-\[\#00000030\] {
+  color: #00000030;
+}
+
+.text-\[\#c2c2c230\] {
+  color: #c2c2c230;
+}
+
+.text-\[\#ffffff85\] {
+  color: #ffffff85;
+}
+
 .hover\:text-\[\#0074D6\]:hover {
   --tw-text-opacity: 1;
   color: rgb(0 116 214 / var(--tw-text-opacity));
@@ -924,6 +994,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .hover\:text-black:hover {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.hover\:text-white:hover {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .focus\:outline-none:focus {
