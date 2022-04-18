@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--taiwind css-->
+	<link href="css/output.css" rel="stylesheet">
+    <!-- fontawesome css  -->	
+	<link rel="stylesheet" href="css/all.min.css">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Body Measurement</title>
+</head>
+<body>
+    <!-- navbar -->
+    <div class="text-[1.5vw] flex justify-between items-center">
+		<div class="ml-[4vw]">
+			<a href="#"><img class="w-[10vw]" src="images/logo/logo.png" alt="logo"></a>
+		</div>
+		<div class="flex justify-between w-[30vw]">
+			<div> <a href="#"> Home</a></div>
+			<div> <a href="#"> Services</a></div>
+			<div> <a href="#"> About Us</a></div>
+			<div> <a href="#"> Contact</a></div>
+		</div>
+		<div class="mr-[4vw]"> 
+			<a href="#"><i class="fa-solid fa-user mr-[0.5vw]"></i>Megha Sen</a>
+		</div>
+	</div>
+    <!-- my account Section -->
+	<div class="mt-[5vw] flex">
+		<div class="ml-[4vw] text-[1.5vw] sidebar-user w-[22vw] h-[31vw] rounded-[1vw] font-semibold">
+			<div class="bg-[#ECECEC] w-[22vw] h-[5vw] pl-[2vw] flex items-center rounded-t-[1vw]">My Account</div>
+			<div class="flex flex-col justify-around items-center ">
+				<div class="h-[5vw] w-[18vw] flex items-center border-b-[0.15vw] text-[#0000007b]">
+					<a href="user-profile.html"><i class="fa-solid fa-user mr-[0.5vw]"></i>Profile</a>
+				</div>
+				<div class="h-[5vw] w-[18vw] flex items-center border-b-[0.15vw] text-[#0000007b]">
+					<a href="user-manage-orders.html"><i class="fa-solid fa-gift mr-[0.5vw]"></i>Manage Orders</a>
+				</div>
+				<div class="h-[5vw] w-[18vw] flex items-center border-b-[0.15vw] text-[#0000007b]">
+					<a href="user-manage-address.html"><i class="fa-solid fa-location-dot mr-[0.5vw]"></i>Manage Address</a>
+				</div>
+				<div class="h-[5vw] w-[18vw] flex items-center border-b-[0.15vw]">
+					<a href="gifts-&-rewards.html"><i class="fa-solid fa-circle-dollar-to-slot mr-[0.5vw]"></i>Gift & Reawards</a>
+				</div>
+				<div class="h-[5vw] w-[18vw] flex items-center text-[#0000007b]">
+					<a href="body measurement.html"><i class="fa-solid fa-tape mr-[0.5vw]"></i>Body Measurement</a>
+				</div>
+			</div>
+		</div>
+    
+        <!-- body measurement -->
+        <div class="sidebar-user w-[65vw] h-[87vw] ml-[3vw] rounded-[1vw] text-[1.5vw] px-[4vw] pt-[2vw] font-semibold mb-[10vw]"> 
+            <div class="font-bold text-[2vw]">Body Measurement</div>
+                <div class="flex justify-between mt-[4vw] font-medium">
+                    <div class="w-[12vw]">
+                        <div>Shoulder
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#shoulder"><i class="fa-solid fa-circle-info"></i></a>
+                        </div>
+                        <input class="border-b-[0.2vw] w-[7vw]" placeholder="inch" type="text">
+                    </div>
+                    <div class="w-[12vw]">
+                        <div>Chest
+                            <a href="#"  data-bs-toggle="modal" data-bs-target="#chest"><i class="fa-solid fa-circle-info"></i></a>
+                        </div>
+                        <input class="border-b-[0.2vw] w-[7vw]"placeholder="inch" type="text">
+                    </div>
+                    <div class="w-[12vw]">
+                        <div>Bust
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#bust"><i class="fa-solid fa-circle-info"></i></a>
+                        </div>
+                        <input class="border-b-[0.2vw] w-[7vw]"placeholder="inch" type="text">
+                    </div>
+                    <div class="w-[12vw]">
+                        <div>Under Bust
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#underbust"><i class="fa-solid fa-circle-info"></i></a>
+                        </div>
+                        <input class="border-b-[0.2vw] w-[7vw]"placeholder="inch" type="text">
+                    </div>
+                </div>
+
+                <div class="flex justify-between mt-[4vw] font-medium">
+                    <div class="w-[12vw]">
+                        <div>Waist
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#Waist"><i class="fa-solid fa-circle-info"></i></a>
+                        </div>
+                        <input class="border-b-[0.2vw] w-[7vw]" placeholder="inch"  type="text">
+                    </div>
+                    <div class="w-[12vw]">
+                        <div>Wearing Waist
+                            <a href="#"  data-bs-toggle="modal" data-bs-target="#WearingWaist"><i class="fa-solid fa-circle-info"></i></a>
+                        </div>
+                        <input class="border-b-[0.2vw] w-[7vw]"placeholder="inch" type="text">
+                    </div>
+                    <div class="w-[12vw]">
+                        <div>Hip
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#hip"><i class="fa-solid fa-circle-info"></i></a>
+                        </div>
+                        <input class="border-b-[0.2vw] w-[7vw]"placeholder="inch" type="text">
+                    </div>
+                    <div class="w-[12vw]">
+                        <div>Thigh
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#thigh"><i class="fa-solid fa-circle-info"></i></a>
+                        </div>
+                        <input class="border-b-[0.2vw] w-[7vw]"placeholder="inch" type="text">
+                    </div>
+                </div>
+
+                <div class="flex justify-between mt-[4vw] font-medium">
+                    <div class="w-[12vw]">
+                        <div>Upper Arm
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#UpperArm"><i class="fa-solid fa-circle-info"></i></a>
+                        </div>
+                        <input class="border-b-[0.2vw] w-[7vw]" placeholder="inch"  type="text">
+                    </div>
+                    <div class="w-[12vw]">
+                        <div>Inseam
+                            <a href="#"  data-bs-toggle="modal" data-bs-target="#inseam"><i class="fa-solid fa-circle-info"></i></a>
+                        </div>
+                        <input class="border-b-[0.2vw] w-[7vw]"placeholder="inch" type="text">
+                    </div>
+                    <div class="w-[12vw]">
+                        <div>Outseam
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#outseam"><i class="fa-solid fa-circle-info"></i></a>
+                        </div>
+                        <input class="border-b-[0.2vw] w-[7vw]"placeholder="inch" type="text">
+                    </div>
+                    <div class="w-[12vw]">
+                        <div>Total Rise
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#totalrise"><i class="fa-solid fa-circle-info"></i></a>
+                        </div>
+                        <input class="border-b-[0.2vw] w-[7vw]"placeholder="inch" type="text">
+                    </div>
+                </div>
+
+                <div class="flex mt-[4vw] font-semibold">
+                    <div class="w-[12vw]">
+                        <div>Hip At Crotch
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#HipAtCrotch"><i class="fa-solid fa-circle-info"></i></a>
+                        </div>
+                        <input class="border-b-[0.2vw] w-[7vw]" placeholder="inch"  type="text">
+                    </div>
+                    <div>
+                        <div class="ml-[4vw]">Calf
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#calf"><i class="fa-solid fa-circle-info"></i></a>
+                        </div>
+                        <input class="border-b-[0.2vw] w-[7vw] ml-[4vw]"placeholder="inch" type="text">
+                    </div>
+                </div>
+
+                <!-- information -->
+                <div class="text-[1vw] mt-[3vw]">These measurements are optional. If you have a long torso or long legs, please consider providing them to help us achieve a great fit. For best results, please ask someone to help measure you</div>
+
+                <div class="font-semibold text-[2.1vw] mt-[3vw]">High Point to Shoulder to</div>
+                
+                <div class="flex justify-between mt-[4vw] font-semibold">
+                    <div class="w-[12vw]">
+                        <div>Bust Point
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#bustpoint"><i class="fa-solid fa-circle-info"></i></a>
+                        </div>
+                        <input class="border-b-[0.2vw] w-[7vw]" placeholder="inch"  type="text">
+                    </div>
+                    <div class="w-[12vw]">
+                        <div>Knee
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#knee"><i class="fa-solid fa-circle-info"></i></a>
+                        </div>
+                        <input class="border-b-[0.2vw] w-[7vw]"placeholder="inch" type="text">
+                    </div>
+                    <div class="w-[12vw]">
+                        <div>Waist
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#hpswaist"><i class="fa-solid fa-circle-info"></i></a>
+                        </div>
+                        <input class="border-b-[0.2vw] w-[7vw]"placeholder="inch" type="text">
+                    </div>
+                    <div class="w-[12vw]">
+                        <div>Front Hip
+                            <a href="#"  data-bs-toggle="modal" data-bs-target="#FrontHip"><i class="fa-solid fa-circle-info"></i></a>
+                        </div>
+                        <input class="border-b-[0.2vw] w-[7vw]"placeholder="inch" type="text">
+                    </div>   
+                </div>
+
+                <div class="flex  mt-[4vw] font-semibold">
+                    <div class="w-[15vw]">
+                        <div>Back Hip
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#BackHip"><i class="fa-solid fa-circle-info"></i></a>
+                        </div>
+                        <input class="border-b-[0.2vw] w-[7vw]" placeholder="inch"  type="text">
+                    </div>
+                    <div class="w-[15vw]">
+                        <div>Front Rise
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#FrontRise"><i class="fa-solid fa-circle-info"></i></a>
+                        </div>
+                        <input class="border-b-[0.2vw] w-[7vw]"placeholder="inch" type="text">
+                    </div>
+                    <div class="w-[15vw]">
+                        <div>Back Rise
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#BackRise"><i class="fa-solid fa-circle-info"></i></a>
+                        </div>
+                        <input class="border-b-[0.2vw] w-[7vw]"placeholder="inch" type="text">
+                    </div>
+                </div>
+
+                <div class="flex  mt-[4vw] font-semibold">
+                    <div class="">
+                        <div>Wearing Waist to Knee
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#WearingWaisttoKnee"><i class="fa-solid fa-circle-info"></i></a>
+                        </div>
+                        <input class="border-b-[0.2vw] w-[7vw]" placeholder="inch"  type="text">
+                    </div>
+                    <div class="ml-[7vw]">
+                        <div>Height
+                            <a href="#"><i class="fa-solid fa-circle-info"></i></a>
+                        </div>
+                        <input class="border-b-[0.2vw] w-[7vw]"placeholder="inch" type="text">
+                    </div>
+                </div>
+                <button type="submit" class="bg-[#0074D6] text-white h-[3.5vw] w-[8vw] text-[1.5vw] rounded-[0.5vw] ml-[49vw] font-semibold mt-[3vw]">Save</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+<!-- bootstrap Modal -->
+
+<!-- shoulder start -->
+<div class="modal fade" id="shoulder" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content w-[63vw] h-[33vw]">
+            <div class="flex justify-end">
+                <button type="button" class="w-[2vw] h-[2vw] text-[1.5vw]" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="mb-[1.5vw] text-[1.8vw] font-semibold ml-[2vw] mt-[1vw]">How to Measure?</div>
+            
+            <div class="flex">
+                <div class="ml-[2vw]">
+                    <img class=" w-[20vw]" src="images/measurement/Shoulder-to-Shoulder.jpg" alt="Shoulder-to-Shoulder">
+                </div>
+            
+                <div class="ml-[3vw] w-[32vw]">
+                    <div class="mb-[1vw] text-[1.6vw] font-semibold">Shoulder</div>
+                    <div class="text-justify text-[1.2vw]">This is one that may be easier with the help of a friend. Measure across your upper back from the tip of one shoulder to the tip of the other. Try not to hunch over.
+                    </div>
+                </div> 
+            </div>  
+        </div>
+    </div>
+</div>
+<!-- shoulder end -->
+
+<!-- Chest start-->
+<div class="modal fade" id="chest" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content w-[63vw] h-[33vw]">
+            <div class="flex justify-end">
+                <button type="button" class="w-[2vw] h-[2vw] text-[1.5vw]" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="mb-[1.5vw] text-[1.8vw] font-semibold ml-[2vw] mt-[1vw]">How to Measure?</div>
+            
+            <div class="flex">
+                <div class="ml-[2vw]">
+                    <img class=" w-[20vw]" src="images/measurement/Chest.jpg" alt="chest">
+                </div>
+            
+                <div class="ml-[3vw] w-[32vw]">
+                    <div class="mb-[1vw] text-[1.6vw] font-semibold">Chest</div>
+                    <div class="text-justify text-[1.2vw]">Measure all the way around your torso immediately above your bust.
+                    </div>
+                </div> 
+            </div>  
+        </div>
+    </div>
+</div>
+<!-- Chest end -->
+
+<!-- bust start-->
+<div class="modal fade" id="bust" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content w-[63vw] h-[33vw]">
+            <div class="flex justify-end">
+                <button type="button" class="w-[2vw] h-[2vw] text-[1.5vw]" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="mb-[1.5vw] text-[1.8vw] font-semibold ml-[2vw] mt-[1vw]">How to Measure?</div>
+            
+            <div class="flex">
+                <div class="ml-[2vw]">
+                    <img class=" w-[20vw]" src="images/measurement/bust.jpg" alt="bust">
+                </div>
+            
+                <div class="ml-[3vw] w-[32vw]">
+                    <div class="mb-[1vw] text-[1.6vw] font-semibold">Bust</div>
+                    <div class="text-justify text-[1.2vw]">Wearing your usual bra, with arms relaxed at your sides, measure your bust at the fullest point, keeping the tape parallel to the floor. It takes it past over both nipples, under the armhole and over the shoulder blades, around your back about where your bra strap is.
+                    </div>
+                </div> 
+            </div>  
+        </div>
+    </div>
+</div>
+<!-- bust end -->
+
+<!-- bust start-->
+<div class="modal fade" id="bust" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content w-[63vw] h-[33vw]">
+            <div class="flex justify-end">
+                <button type="button" class="w-[2vw] h-[2vw] text-[1.5vw]" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="mb-[1.5vw] text-[1.8vw] font-semibold ml-[2vw] mt-[1vw]">How to Measure?</div>
+            
+            <div class="flex">
+                <div class="ml-[2vw]">
+                    <img class=" w-[20vw]" src="images/measurement/bust.jpg" alt="bust">
+                </div>
+            
+                <div class="ml-[3vw] w-[32vw]">
+                    <div class="mb-[1vw] text-[1.6vw] font-semibold">Bust</div>
+                    <div class="text-justify text-[1.2vw]">Wearing your usual bra, with arms relaxed at your sides, measure your bust at the fullest point, keeping the tape parallel to the floor. It takes it past over both nipples, under the armhole and over the shoulder blades, around your back about where your bra strap is.
+                    </div>
+                </div> 
+            </div>  
+        </div>
+    </div>
+</div>
+<!-- bust end -->
+
+<!--under bust start-->
+<div class="modal fade" id="underbust" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content w-[63vw] h-[33vw]">
+            <div class="flex justify-end">
+                <button type="button" class="w-[2vw] h-[2vw] text-[1.5vw]" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="mb-[1.5vw] text-[1.8vw] font-semibold ml-[2vw] mt-[1vw]">How to Measure?</div>
+            
+            <div class="flex">
+                <div class="ml-[2vw]">
+                    <img class=" w-[20vw]" src="images/measurement/underbust.jpg" alt="underbust">
+                </div>
+            
+                <div class="ml-[3vw] w-[32vw]">
+                    <div class="mb-[1vw] text-[1.6vw] font-semibold">Under Bust</div>
+                    <div class="text-justify text-[1.2vw]">Measure all the way around your torso immediately beneath your bust.
+                    </div>
+                </div> 
+            </div>  
+        </div>
+    </div>
+</div>
+<!--under bust end -->
+
+<!--Waist start-->
+<div class="modal fade" id="Waist" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content w-[63vw] h-[33vw]">
+            <div class="flex justify-end">
+                <button type="button" class="w-[2vw] h-[2vw] text-[1.5vw]" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="mb-[1.5vw] text-[1.8vw] font-semibold ml-[2vw] mt-[1vw]">How to Measure?</div>
+            
+            <div class="flex">
+                <div class="ml-[2vw]">
+                    <img class=" w-[20vw]" src="images/measurement/Waist.jpg" alt="Waist">
+                </div>
+            
+                <div class="ml-[3vw] w-[32vw]">
+                    <div class="mb-[1vw] text-[1.6vw] font-semibold">Waist</div>
+                    <div class="text-justify text-[1.2vw]">Measure around the narrowest part of the natural waistline. To find your natural waistline, bend to one side. There will usually be a crease where you bend. Often it is just below your ribcage. That's your natural waistline. Don't worry since this may seem higher than where you actually wear your pants and jeans. But this is the point that is so important for a great fit. Try to keep the tape measure parallel to the floor as you measure all the way around your torso. That's your natural Waist Circumference.
+                    </div>
+                </div> 
+            </div>  
+        </div>
+    </div>
+</div>
+<!--Waist end -->
+
+<!--Wearing Waist start-->
+<div class="modal fade" id="WearingWaist" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content w-[63vw] h-[33vw]">
+            <div class="flex justify-end">
+                <button type="button" class="w-[2vw] h-[2vw] text-[1.5vw]" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="mb-[1.5vw] text-[1.8vw] font-semibold ml-[2vw] mt-[1vw]">How to Measure?</div>
+            
+            <div class="flex">
+                <div class="ml-[2vw]">
+                    <img class=" w-[20vw]" src="images/measurement/Wearing-waist.jpg" alt="Wearing Waist">
+                </div>
+            
+                <div class="ml-[3vw] w-[32vw]">
+                    <div class="mb-[1vw] text-[1.6vw] font-semibold">Wearing Waist</div>
+                    <div class="text-justify text-[1.2vw]">Measure all the way around your waist where you actually wear your pants and jeans.
+                    </div>
+                </div> 
+            </div>  
+        </div>
+    </div>
+</div>
+<!--Wearing Waist end -->
+
+<!--Hip start-->
+<div class="modal fade" id="hip" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content w-[63vw] h-[33vw]">
+            <div class="flex justify-end">
+                <button type="button" class="w-[2vw] h-[2vw] text-[1.5vw]" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="mb-[1.5vw] text-[1.8vw] font-semibold ml-[2vw] mt-[1vw]">How to Measure?</div>
+            
+            <div class="flex">
+                <div class="ml-[2vw]">
+                    <img class=" w-[20vw]" src="images/measurement/hip.jpg" alt="hip">
+                </div>
+            
+                <div class="ml-[3vw] w-[32vw]">
+                    <div class="mb-[1vw] text-[1.6vw] font-semibold">Hip</div>
+                    <div class="text-justify text-[1.2vw]">Standing with heels together, measure around your body at the broadest part of your hips (approximately 8 inches below natural waistline). This will include the fullest part of your backside too and should be just about where your legs meets your torso.
+                    </div>
+                </div> 
+            </div>  
+        </div>
+    </div>
+</div>
+<!--Hip end -->
+
+<!--Thigh start-->
+<div class="modal fade" id="thigh" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content w-[63vw] h-[33vw]">
+            <div class="flex justify-end">
+                <button type="button" class="w-[2vw] h-[2vw] text-[1.5vw]" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="mb-[1.5vw] text-[1.8vw] font-semibold ml-[2vw] mt-[1vw]">How to Measure?</div>
+            
+            <div class="flex">
+                <div class="ml-[2vw]">
+                    <img class=" w-[20vw]" src="images/measurement/Thigh.jpg" alt="Thigh">
+                </div>
+            
+                <div class="ml-[3vw] w-[32vw]">
+                    <div class="mb-[1vw] text-[1.6vw] font-semibold">Thigh</div>
+                    <div class="text-justify text-[1.2vw]">Measure around the fullest part of one thigh. And yes, you get to choose which thigh.
+                    </div>
+                </div> 
+            </div>  
+        </div>
+    </div>
+</div>
+<!--Thigh end -->
+
+<!--Upper Arm  start-->
+<div class="modal fade" id="UpperArm" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content w-[63vw] h-[33vw]">
+            <div class="flex justify-end">
+                <button type="button" class="w-[2vw] h-[2vw] text-[1.5vw]" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="mb-[1.5vw] text-[1.8vw] font-semibold ml-[2vw] mt-[1vw]">How to Measure?</div>
+            
+            <div class="flex">
+                <div class="ml-[2vw]">
+                    <img class=" w-[20vw]" src="images/measurement/Upper-Arm.jpg" alt="Upper-Arm">
+                </div>
+            
+                <div class="ml-[3vw] w-[32vw]">
+                    <div class="mb-[1vw] text-[1.6vw] font-semibold">Upper-Arm</div>
+                    <div class="text-justify text-[1.2vw]">Place the tape measure around the widest part of your upper arm, your bicep. Then bend your arm slightly at the elbow. We want to be able to bend your arm in that nature.
+                    </div>
+                </div> 
+            </div>  
+        </div>
+    </div>
+</div>
+<!--Upper Arm  end -->
+
+<!--Inseam start-->
+<div class="modal fade" id="inseam" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content w-[63vw] h-[33vw]">
+            <div class="flex justify-end">
+                <button type="button" class="w-[2vw] h-[2vw] text-[1.5vw]" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="mb-[1.5vw] text-[1.8vw] font-semibold ml-[2vw] mt-[1vw]">How to Measure?</div>
+            
+            <div class="flex">
+                <div class="ml-[2vw]">
+                    <img class=" w-[20vw]" src="images/measurement/inseam.jpg" alt="inseam">
+                </div>
+            
+                <div class="ml-[3vw] w-[32vw]">
+                    <div class="mb-[1vw] text-[1.6vw] font-semibold">Inseam</div>
+                    <div class="text-justify text-[1.2vw]">Measure the length of your inner leg all the way from the crotch to the ankle.
+                    </div>
+                </div> 
+            </div>  
+        </div>
+    </div>
+</div>
+<!--Inseam  end -->
+
+<!--Outseam start-->
+<div class="modal fade" id="outseam" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content w-[63vw] h-[33vw]">
+            <div class="flex justify-end">
+                <button type="button" class="w-[2vw] h-[2vw] text-[1.5vw]" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="mb-[1.5vw] text-[1.8vw] font-semibold ml-[2vw] mt-[1vw]">How to Measure?</div>
+            
+            <div class="flex">
+                <div class="ml-[2vw]">
+                    <img class=" w-[20vw]" src="images/measurement/outseam.jpg" alt="outseam">
+                </div>
+            
+                <div class="ml-[3vw] w-[32vw]">
+                    <div class="mb-[1vw] text-[1.6vw] font-semibold">Outseam</div>
+                    <div class="text-justify text-[1.2vw]">This is essential for well fitting pants. Measure straight from the wearing waistline to the ankle.
+                    </div>
+                </div> 
+            </div>  
+        </div>
+    </div>
+</div>
+<!--Outseam  end -->
+
+<!--Total Rise  start-->
+<div class="modal fade" id="totalrise" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content w-[63vw] h-[33vw]">
+            <div class="flex justify-end">
+                <button type="button" class="w-[2vw] h-[2vw] text-[1.5vw]" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="mb-[1.5vw] text-[1.8vw] font-semibold ml-[2vw] mt-[1vw]">How to Measure?</div>
+            
+            <div class="flex">
+                <div class="ml-[2vw]">
+                    <img class=" w-[20vw]" src="images/measurement/Total-rise.jpg" alt="Total-rise">
+                </div>
+            
+                <div class="ml-[3vw] w-[32vw]">
+                    <div class="mb-[1vw] text-[1.6vw] font-semibold">Total Rise </div>
+                    <div class="text-justify text-[1.2vw]">Position the tape vertically and place it so that it starts at the center of your back right at the wearing waist. Now this is where you and your friend get more personal. Pass the tape between your legs and all the way up to the middle of your wearing waist in the front. Again, this may seem hard, but don't worry. Be sure the tape isn't too tight or too loose. Stand upright, this is your Total Rise.
+                    </div>
+                </div> 
+            </div>  
+        </div>
+    </div>
+</div>
+<!--Total Rise  end -->
+
+<!--Hip At Crotch  start-->
+<div class="modal fade" id="HipAtCrotch" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content w-[63vw] h-[33vw]">
+            <div class="flex justify-end">
+                <button type="button" class="w-[2vw] h-[2vw] text-[1.5vw]" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="mb-[1.5vw] text-[1.8vw] font-semibold ml-[2vw] mt-[1vw]">How to Measure?</div>
+            
+            <div class="flex">
+                <div class="ml-[2vw]">
+                    <img class=" w-[20vw]" src="images/measurement/Hip At Crotch.jpg" alt="Hip At Crotch">
+                </div>
+            
+                <div class="ml-[3vw] w-[32vw]">
+                    <div class="mb-[1vw] text-[1.6vw] font-semibold">Hip At Crotch </div>
+                    <div class="text-justify text-[1.2vw]">Measure all the way around your body at your low hip, where it meets the thighs.
+                    </div>
+                </div> 
+            </div>  
+        </div>
+    </div>
+</div>
+<!--Hip At Crotch end -->
+
+<!--Calf  start-->
+<div class="modal fade" id="calf" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content w-[63vw] h-[33vw]">
+            <div class="flex justify-end">
+                <button type="button" class="w-[2vw] h-[2vw] text-[1.5vw]" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="mb-[1.5vw] text-[1.8vw] font-semibold ml-[2vw] mt-[1vw]">How to Measure?</div>
+            
+            <div class="flex">
+                <div class="ml-[2vw]">
+                    <img class=" w-[20vw]" src="images/measurement/Calf.jpg" alt="Calf">
+                </div>
+            
+                <div class="ml-[3vw] w-[32vw]">
+                    <div class="mb-[1vw] text-[1.6vw] font-semibold">Calf</div>
+                    <div class="text-justify text-[1.2vw]">Measure around the fullest part of one calf.
+                    </div>
+                </div> 
+            </div>  
+        </div>
+    </div>
+</div>
+<!--Calf end -->
+
+<!-- High Point to Shoulder to boostrap model -->
+
+<!--Bust Point  start-->
+<div class="modal fade" id="bustpoint" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content w-[63vw] h-[33vw]">
+            <div class="flex justify-end">
+                <button type="button" class="w-[2vw] h-[2vw] text-[1.5vw]" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="mb-[1.5vw] text-[1.8vw] font-semibold ml-[2vw] mt-[1vw]">How to Measure?</div>
+            
+            <div class="flex">
+                <div class="ml-[2vw]">
+                    <img class=" w-[20vw]" src="images/measurement/Bust Point.jpg" alt="Bust Point">
+                </div>
+            
+                <div class="ml-[3vw] w-[32vw]">
+                    <div class="mb-[1vw] text-[1.6vw] font-semibold">Bust Point</div>
+                    <div class="text-justify text-[1.2vw]">Start from where your shoulder meets your neck and measure down along the front of your body to the tip (apex) of the bust.
+                    </div>
+                </div> 
+            </div>  
+        </div>
+    </div>
+</div>
+<!--Bust Point end -->
+
+<!--Knee  start-->
+<div class="modal fade" id="knee" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content w-[63vw] h-[33vw]">
+            <div class="flex justify-end">
+                <button type="button" class="w-[2vw] h-[2vw] text-[1.5vw]" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="mb-[1.5vw] text-[1.8vw] font-semibold ml-[2vw] mt-[1vw]">How to Measure?</div>
+            
+            <div class="flex">
+                <div class="ml-[2vw]">
+                    <img class=" w-[20vw]" src="images/measurement/knee.jpg" alt="Knee">
+                </div>
+            
+                <div class="ml-[3vw] w-[32vw]">
+                    <div class="mb-[1vw] text-[1.6vw] font-semibold">Knee </div>
+                    <div class="text-justify text-[1.2vw]">Start from where your shoulder meets your neck and measure down following along the curve of your front to your natural waistline and then down along to your knee. For best results, ask someone to help with this measurement!
+                    </div>
+                </div> 
+            </div>  
+        </div>
+    </div>
+</div>
+<!--Knee  end -->
+
+<!--Hps Waist  start-->
+<div class="modal fade" id="hpswaist" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content w-[63vw] h-[33vw]">
+            <div class="flex justify-end">
+                <button type="button" class="w-[2vw] h-[2vw] text-[1.5vw]" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="mb-[1.5vw] text-[1.8vw] font-semibold ml-[2vw] mt-[1vw]">How to Measure?</div>
+            
+            <div class="flex">
+                <div class="ml-[2vw]">
+                    <img class=" w-[20vw]" src="images/measurement/HPS-to-Waist.jpg" alt="HPS-to-Waist">
+                </div>
+            
+                <div class="ml-[3vw] w-[32vw]">
+                    <div class="mb-[1vw] text-[1.6vw] font-semibold">HPS-to-Waist </div>
+                    <div class="text-justify text-[1.2vw]">For best results, tie a ribbon (or string or skinny belt) at your natural waist (the narrowest part of the waistline) to mark it. Then start from where your shoulder meets your neck and measure down following along the curve of your front to the marker at your natural waist. It might be helpful to ask someone to help with this measurement!
+                    </div>
+                </div> 
+            </div>  
+        </div>
+    </div>
+</div>
+<!-- Hps Waist  end -->
+
+<!--Front Hip start-->
+<div class="modal fade" id="FrontHip" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content w-[63vw] h-[33vw]">
+            <div class="flex justify-end">
+                <button type="button" class="w-[2vw] h-[2vw] text-[1.5vw]" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="mb-[1.5vw] text-[1.8vw] font-semibold ml-[2vw] mt-[1vw]">How to Measure?</div>
+            
+            <div class="flex">
+                <div class="ml-[2vw]">
+                    <img class=" w-[20vw]" src="images/measurement/front-hip.jpg" alt="front-hip">
+                </div>
+            
+                <div class="ml-[3vw] w-[32vw]">
+                    <div class="mb-[1vw] text-[1.6vw] font-semibold">Front-hip</div>
+                    <div class="text-justify text-[1.2vw]">Standing with heels together, measure from one side seam to the other side seam, across your front, at the broadest part of your hips (approximately 8" below natural waistline).
+                    </div>
+                </div> 
+            </div>  
+        </div>
+    </div>
+</div>
+<!-- Front Hip end -->
+
+<!--Back Hip start-->
+<div class="modal fade" id="BackHip" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content w-[63vw] h-[33vw]">
+            <div class="flex justify-end">
+                <button type="button" class="w-[2vw] h-[2vw] text-[1.5vw]" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="mb-[1.5vw] text-[1.8vw] font-semibold ml-[2vw] mt-[1vw]">How to Measure?</div>
+            
+            <div class="flex">
+                <div class="ml-[2vw]">
+                    <img class=" w-[20vw]" src="images/measurement/back-hip.jpg" alt="back-hip">
+                </div>
+            
+                <div class="ml-[3vw] w-[32vw]">
+                    <div class="mb-[1vw] text-[1.6vw] font-semibold">Back-hip</div>
+                    <div class="text-justify text-[1.2vw]">Standing with heels together, measure from one side seam to the other side seam, across your back, at the broadest part of your hips (approximately 8" below natural waistline).
+                    </div>
+                </div> 
+            </div>  
+        </div>
+    </div>
+</div>
+<!-- Back Hip end -->
+
+<!--Front Rise start-->
+<div class="modal fade" id="FrontRise" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content w-[63vw] h-[33vw]">
+            <div class="flex justify-end">
+                <button type="button" class="w-[2vw] h-[2vw] text-[1.5vw]" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="mb-[1.5vw] text-[1.8vw] font-semibold ml-[2vw] mt-[1vw]">How to Measure?</div>
+            
+            <div class="flex">
+                <div class="ml-[2vw]">
+                    <img class=" w-[20vw]" src="images/measurement/front-rise.jpg" alt="front-rise">
+                </div>
+            
+                <div class="ml-[3vw] w-[32vw]">
+                    <div class="mb-[1vw] text-[1.6vw] font-semibold">Front Rise</div>
+                    <div class="text-justify text-[1.2vw]">Position the tape vertically and place it so that it starts at the center of your wearing waist in the front. Pass the tape down to the crotch seam.
+                    </div>
+                </div> 
+            </div>  
+        </div>
+    </div>
+</div>
+<!-- Front Rise end -->
+
+<!--Back Rise start-->
+<div class="modal fade" id="BackRise" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content w-[63vw] h-[33vw]">
+            <div class="flex justify-end">
+                <button type="button" class="w-[2vw] h-[2vw] text-[1.5vw]" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="mb-[1.5vw] text-[1.8vw] font-semibold ml-[2vw] mt-[1vw]">How to Measure?</div>
+            
+            <div class="flex">
+                <div class="ml-[2vw]">
+                    <img class=" w-[20vw]" src="images/measurement/back-rise.jpg" alt="back-rise">
+                </div>
+            
+                <div class="ml-[3vw] w-[32vw]">
+                    <div class="mb-[1vw] text-[1.6vw] font-semibold">Back Rise</div>
+                    <div class="text-justify text-[1.2vw]">Position the tape vertically and place it so that it starts at the center of your back right at the wearing waistline. Pass the tape down to the crotch seam.
+                    </div>
+                </div> 
+            </div>  
+        </div>
+    </div>
+</div>
+<!-- Back Rise end -->
+
+<!--Wearing Waist to Knee start-->
+<div class="modal fade" id="WearingWaisttoKnee" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content w-[63vw] h-[33vw]">
+            <div class="flex justify-end">
+                <button type="button" class="w-[2vw] h-[2vw] text-[1.5vw]" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="mb-[1.5vw] text-[1.8vw] font-semibold ml-[2vw] mt-[1vw]">How to Measure?</div>
+            
+            <div class="flex">
+                <div class="ml-[2vw]">
+                    <img class=" w-[20vw]" src="images/measurement/Wearing Waist to Knee.jpg" alt="Wearing Waist to Knee">
+                </div>
+            
+                <div class="ml-[3vw] w-[32vw]">
+                    <div class="mb-[1vw] text-[1.6vw] font-semibold">Wearing Waist to Knee</div>
+                    <div class="text-justify text-[1.2vw]">Start at the wearing waistline and measure down to the knee.
+                    </div>
+                </div> 
+            </div>  
+        </div>
+    </div>
+</div>
+<!-- Wearing Waist to Knee end -->
+
+<script src="js/all.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
