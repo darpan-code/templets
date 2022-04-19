@@ -5,59 +5,65 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- google font -->
+    <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Italianno&family=Lobster&family=Red+Hat+Display:wght@400;500;600;700&family=Satisfy&display=swap" rel="stylesheet">
 
-    <!--taiwind css-->
-	<link href="css/output.css" rel="stylesheet">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 
-    <!-- fontawesome css  -->	
-	<link rel="stylesheet" href="css/all.min.css">
-    
-    <!-- custom css -->
+    <!-- font awesome css -->
+    <link rel="stylesheet" href="css/all.min.css">
+
+    <!-- tailwind css -->
+    <link href="css/output.css" rel="stylesheet">
+
+    <!-- mouse scroll animation css -->
+    <link rel="stylesheet" href="css/mouse-scroll-animation.css">
+
+    <!-- custome css -->
     <link rel="stylesheet" href="css/style.css">
-
-    <title>Manage Address</title>
+	
+	<title>User | Manage Address</title>
 </head>
 <body>
-
-    <!-- nav-bar -->
-    <div class="text-[1.5vw] flex justify-between items-center">
-		<div class="ml-[4vw]">
-			<a href="#"><img class="w-[10vw]" src="images/logo/logo.png" alt="logo"></a>
-		</div>
-		<div class="flex justify-between w-[30vw]">
-			<div> <a class="font-medium" href="#"> Home</a></div>
-			<div> <a href="#"> Services</a></div>
-			<div> <a href="#"> About Us</a></div>
-			<div> <a href="#"> Contact</a></div>
-		</div>
-		<div class="mr-[4vw]"> 
-			<a href="#"><i class="fa-solid fa-user mr-[0.5vw]"></i>Megha Sen</a>
-		</div>
-	</div>
+	<!-- nav-bar section -->
+    <div class="nav-bar h-[5vw] flex justify-between items-center text-[1.5vw]  capitalize fixed-top">
+        <div class="ml-[5vw]">
+            <a href="index.html#"> <img class="w-[12vw]" src="images/logo/logo.png" alt="Niddlecraft"> </a>
+        </div>
+        <div class="flex justify-between w-[30vw]">
+            <div><a href="index.html#" class="hover:text-[#0074D6] font-medium"> home </a></div>
+            <div><a href="index.html#service" class="hover:text-[#0074D6]"> services </a></div>
+            <div><a href="index.html#our-tailor" class="hover:text-[#0074D6]"> our tailors </a></div>
+            <div><a href="index.html#contact" class="hover:text-[#0074D6]"> contact </a></div>
+        </div>
+        <div class="flex items-center mr-[5vw]">
+			<abbr title="Profile"><a href="user-profile.html"><i class="fa-solid fa-user mr-[0.5vw]"></i>Megha Sen</a></abbr>
+			<abbr title="Logout"><a href="index.html"><i class="fa-solid fa-right-from-bracket ml-[1vw]"></i></a></abbr>
+        </div>
+    </div>
 
     <!-- side-bar Section -->
-	<div class="mt-[5vw] flex">
+	<div class="mt-[10vw] flex">
 		<div class="ml-[4vw] text-[1.5vw] sidebar-user w-[22vw] h-[31vw] rounded-[1vw] font-semibold">
 			<div class="bg-[#ECECEC] w-[22vw] h-[5vw] pl-[2vw] flex items-center rounded-t-[1vw]">My Account</div>
-			<div class="flex flex-col justify-around items-center ">
-				<div class="h-[5vw] w-[18vw] flex items-center border-b-[0.15vw] text-[#0000007b]">
-					<a href="user-profile.html"><i class="fa-solid fa-user mr-[0.5vw]"></i>Profile</a>
+			<div class="flex flex-col justify-around items-center">
+				<div class="h-[5vw] w-[18vw] flex items-center border-b-[0.15vw]">
+					<a href="user-profile.html" class="text-[#0000007b] hover:text-[#0000007b]"><i class="fa-solid fa-user mr-[0.5vw]"></i>Profile</a>
 				</div>
-				<div class="h-[5vw] w-[18vw] flex items-center border-b-[0.15vw] text-[#0000007b]">
-					<a href="user-manage-orders.html"><i class="fa-solid fa-gift mr-[0.5vw]"></i>Manage Orders</a>
+				<div class="h-[5vw] w-[18vw] flex items-center border-b-[0.15vw]">
+					<a href="user-manage-orders.html" class="text-[#0000007b] hover:text-[#0000007b]"><i class="fa-solid fa-gift mr-[0.5vw]"></i>Manage Orders</a>
 				</div>
 				<div class="h-[5vw] w-[18vw] flex items-center border-b-[0.15vw]">
 					<a href="user-manage-address.html"><i class="fa-solid fa-location-dot mr-[0.5vw]"></i>Manage Address</a>
 				</div>
-				<div class="h-[5vw] w-[18vw] flex items-center border-b-[0.15vw] text-[#0000007b]">
-					<a href="gifts-&-rewards.html"><i class="fa-solid fa-circle-dollar-to-slot mr-[0.5vw]"></i>Gift & Reawards</a>
+				<div class="h-[5vw] w-[18vw] flex items-center border-b-[0.15vw]">
+					<a href="gifts-&-rewards.html" class="text-[#0000007b] hover:text-[#0000007b]"><i class="fa-solid fa-circle-dollar-to-slot mr-[0.5vw]"></i>Gift & Reawards</a>
 				</div>
-				<div class="h-[5vw] w-[18vw] flex items-center text-[#0000007b]">
-					<a href="body measurement.html"><i class="fa-solid fa-tape mr-[0.5vw]"></i>Body Measurement</a>
+				<div class="h-[5vw] w-[18vw] flex items-center">
+					<a href="body measurement.html" class="text-[#0000007b] hover:text-[#0000007b]"><i class="fa-solid fa-tape mr-[0.5vw]"></i>Body Measurement</a>
 				</div>
 			</div>
 		</div>
@@ -68,81 +74,62 @@
             <div class="flex justify-between my-[4vw]">
                 <div>
                     <div>Name</div>
-                    <input class="border-b-[0.2vw] w-[26vw]" type="text">
+                    <input class="border-b-[0.2vw] w-[26vw] pl-[.5vw]" type="text">
                 </div>
                 <div>
                     <div>Mobile Number</div>
-                    <input class="border-b-[0.2vw] w-[26vw]" type="tel">
+                    <input class="border-b-[0.2vw] w-[26vw] pl-[.5vw]" type="tel">
                 </div>
             </div>
                 <div>
                     <div>Address 1</div>
-                    <input class="border-b-[0.2vw] w-[57vw]" type="text">
+                    <input class="border-b-[0.2vw] w-[57vw] pl-[.5vw]" type="text">
                 </div>
                 <div class="mt-[4vw]">
                     <div>Address 2</div>
-                    <input class="border-b-[0.2vw] w-[57vw]" type="text">
+                    <input class="border-b-[0.2vw] w-[57vw] pl-[.5vw]" type="text">
                 </div>
             <div class="flex justify-between my-[4vw]">
                 <div>
                     <div>City</div>
-                    <input class="border-b-[0.2vw] w-[26vw]" type="text ">
+                    <input class="border-b-[0.2vw] w-[26vw] pl-[.5vw]" type="text ">
                 </div>
                 <div>
                     <div>District</div>
-                    <input class="border-b-[0.2vw] w-[26vw]" type="text">
+                    <input class="border-b-[0.2vw] w-[26vw] pl-[.5vw]" type="text" value="Hooghly" readonly>
                 </div>
             </div>
             <div class="flex justify-between my-[4vw]">
                 <div>
                     <div>Pin Code</div>
-                    <input class="border-b-[0.2vw] w-[26vw]" type="text">
+                    <input class="border-b-[0.2vw] w-[26vw] pl-[.5vw]" type="text">
                 </div>
                 <div class="ml-[3vw]">
                     <div>State</div>
-                    <select class="border-b-[0.2vw] w-[26vw]">
-                        <option value="">Select State</option>
-                        <option value="Andhra Pradesh">Andhra Pradesh</option>
-                        <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
-                        <option value="Arunachal Pradesh">Arunachal Pradesh</option>
-                        <option value="Assam">Assam</option>
-                        <option value="Bihar">Bihar</option>
-                        <option value="Chandigarh">Chandigarh</option>
-                        <option value="Chhattisgarh">Chhattisgarh</option>
-                        <option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
-                        <option value="Daman and Diu">Daman and Diu</option>
-                        <option value="Delhi">Delhi</option>
-                        <option value="Lakshadweep">Lakshadweep</option>
-                        <option value="Puducherry">Puducherry</option>
-                        <option value="Goa">Goa</option>
-                        <option value="Gujarat">Gujarat</option>
-                        <option value="Haryana">Haryana</option>
-                        <option value="Himachal Pradesh">Himachal Pradesh</option>
-                        <option value="Jammu and Kashmir">Jammu and Kashmir</option>
-                        <option value="Jharkhand">Jharkhand</option>
-                        <option value="Karnataka">Karnataka</option>
-                        <option value="Kerala">Kerala</option>
-                        <option value="Madhya Pradesh">Madhya Pradesh</option>
-                        <option value="Maharashtra">Maharashtra</option>
-                        <option value="Manipur">Manipur</option>
-                        <option value="Meghalaya">Meghalaya</option>
-                        <option value="Mizoram">Mizoram</option>
-                        <option value="Nagaland">Nagaland</option>
-                        <option value="Odisha">Odisha</option>
-                        <option value="Punjab">Punjab</option>
-                        <option value="Rajasthan">Rajasthan</option>
-                        <option value="Sikkim">Sikkim</option>
-                        <option value="Tamil Nadu">Tamil Nadu</option>
-                        <option value="Telangana">Telangana</option>
-                        <option value="Tripura">Tripura</option>
-                        <option value="Uttar Pradesh">Uttar Pradesh</option>
-                        <option value="Uttarakhand">Uttarakhand</option>
-                        <option value="West Bengal">West Bengal</option>
-                    </select>
+                    <input class="border-b-[0.2vw] w-[26vw] pl-[.5vw]" type="text" value="West Bengal" readonly>
                 </div>
             </div>
             <button type="submit" class="bg-[#0074D6] text-white h-[3.5vw] w-[8vw] text-[1.5vw] rounded-[0.5vw] ml-[49vw] font-semibold">Save</button>
         </div>
     </div>
+
+    <!-- up arrow navigation -->
+    <a href="#" class="arrow-hide" id="arrow-nav">
+        <div class="up-arrow">
+        <i class="fa-solid fa-chevron-up"></i>
+        </div>
+    </a>
+
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- font awesome js -->
+    <script src="js/all.min.js"></script>
+
+    <!-- jquery js -->
+    <script src="js/jquery.js"></script>
+
+    <!-- navbar scroll js -->
+    <script src="js/scroll.js"></script>
 </body>
 </html>

@@ -7,9 +7,12 @@
 .icon-scroll {
     width: 1.953vw;
     height: 3.255vw;
-    margin-left: -1.302vw;
+    position: absolute;
+    top: 45vw;
+    left: 48.5vw;
+    /* margin-left: -1.302vw;
     bottom: 0.651vw;
-    margin-top: -2.279vw;
+    margin-top: -2.279vw; */
     border: 0.130vw solid rgb(0, 0, 0);
     border-radius: 1.628vw;
 }
