@@ -108,7 +108,7 @@
                 </div>
                 <div class="w-[20vw]">
                     <div class="font-medium">PIN Code<span class="text-red-600 ml-[.2vw]">*</span></div>
-                    <input class="w-[20vw] pl-[.5vw] rounded-[.2vw]" type="date">
+                    <input class="w-[20vw] pl-[.5vw] rounded-[.2vw]" type="text">
                 </div>
                 <div class="w-[20vw]">
                     <div class="font-medium">Landmark</div>
@@ -123,20 +123,17 @@
             <div class="text-[1.4vw] flex justify-between px-[4vw] mt-[2vw]">
                 <div class="w-[20vw]">
                     <div class="font-medium">Select Service<span class="text-red-600 ml-[.2vw]">*</span></div>
-                    <select class="w-[20vw] pl-[.5vw] rounded-[.2vw]">
+                    <select class="w-[20vw] pl-[.5vw] rounded-[.2vw]" id="service">
                         <option value="select" selected>Select</option>
-                        <option value="Custom tailoring for women">Custom tailoring for women</option>
-                        <option value="Custom tailoring for students"> Custom tailoring for students</option>
-                        <option value="Other services"> Other services</option>
+                        <option value="custom tailoring for women">Custom tailoring for women</option>
+                        <option value="custom tailoring for students"> Custom tailoring for students</option>
+                        <option value="other services"> Other services</option>
                     </select>
                 </div>
                 <div class="w-[20vw]">
                     <div class="font-medium">Service Type<span class="text-red-600 ml-[.2vw]">*</span></div>
-                    <select class="w-[20vw] pl-[.5vw] rounded-[.2vw]">
+                    <select class="w-[20vw] pl-[.5vw] rounded-[.2vw]" id="service-type">
                         <option value="select" selected>Select</option>
-                        <option value="Suits">Suits</option>
-                        <option value="Kurti"> Kurti</option>
-                        <option value="Gown">Gown</option>
                     </select>
                 </div>
                 <div class="w-[20vw]">
@@ -156,12 +153,7 @@
                 </div>
                 <div class="w-[20vw]">
                     <div class="font-medium">Appointment Time<span class="text-red-600 ml-[.2vw]">*</span></div>
-                    <select class="w-[20vw] pl-[.5vw] rounded-[.2vw]">
-                        <option value="select" selected>Select</option>
-                        <option value="Suits">Suits</option>
-                        <option value="Kurti"> Kurti</option>
-                        <option value="Gown">Gown</option>
-                    </select>
+                    <input class="w-[20vw] pl-[.5vw] rounded-[.2vw]" type="time">
                 </div>
                 <div class="w-[20vw]"></div>
             </div>
@@ -959,15 +951,8 @@
     <!-- navbar scroll js -->
     <script src="js/scroll.js"></script>
 
-    <script>
-        $(document).ready(function () {
-            $("#bm-show").click(function(){
-                $("#bm-body").slideDown("slow");
-            });
-            $("#bm-hide").click(function(){
-                $("#bm-body").slideUp("slow");
-            });
-        });
-    </script>
+    <!-- user-appointment js -->
+    <script src="js/user-appointment.js"></script>
+
 </body>
 </html>
