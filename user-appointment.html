@@ -25,7 +25,7 @@
     <!-- custome css -->
     <link rel="stylesheet" href="css/style.css">
 	
-	<title>User | Body Measurement</title>
+	<title>User | Manage Orders</title>
 </head>
 <body>
 	<!-- nav-bar section -->
@@ -44,57 +44,159 @@
 			<abbr title="Logout"><a href="index.html"><i class="fa-solid fa-right-from-bracket ml-[1vw]"></i></a></abbr>
         </div>
     </div>
-    
-    <!-- side-bar Section -->
-	<div class="mt-[12vw] flex">
-		<div class="ml-[4vw] text-[1.5vw] sidebar-user w-[22vw] h-[31vw] rounded-[1vw] font-semibold">
-			<div class="bg-[#ECECEC] w-[22vw] h-[5vw] pl-[2vw] flex items-center rounded-t-[1vw]">
-                <div class="w-[10vw] h-[10vw] overflow-hidden rounded-full relative top-[-3vw] left-[4vw] img-div">
-					<img class="w-[10vw]" src="images/customer/cust2.png" alt="User profile">
-				</div>
+
+
+    <!-- book-appointment section -->
+
+    <div class="mt-[6vw] text-center ">
+        <h1 class="text-[2.5vw] font-bold">Book an Appoinment</h1>
+        <p class="text-[1.5vw] w-[40vw] mx-auto">Book an appoinment for your custom dress that you want to prepare from are professional tailors.</p>
+    </div>
+
+    <div class="w-[90vw] rounded-[1vw] mt-[3vw] mx-auto bg-[#F3FAEF] mb-[4vw]">
+
+        <!-- Communication Details -->
+        <h1 class="text-[2vw] font-bold pl-[3vw] pt-[2vw]">Communication Details</h1>
+        <div>
+            <div class="text-[1.2vw] pl-[4vw]"><span class="text-red-600 mr-[.2vw]">*</span>Required Field</div>
+            
+            <div class="text-[1.4vw] flex justify-between px-[4vw] mt-[2vw]">
+                <div class="w-[20vw]">
+                    <div class="font-medium">Name<span class="text-red-600 ml-[.2vw]">*</span></div>
+                    <input class="w-[20vw] pl-[.5vw] rounded-[.2vw]" type="text">
+                </div>
+                <div class="w-[20vw]">
+                    <div class="font-medium">Phone<span class="text-red-600 ml-[.2vw]">*</span></div>
+                    <input class="w-[20vw] pl-[.5vw] rounded-[.2vw]" type="tel">
+                </div>
+                <div class="w-[20vw]">
+                    <div class="font-medium">Email<span class="text-red-600 ml-[.2vw]">*</span></div>
+                    <input class="w-[20vw] pl-[.5vw] rounded-[.2vw]" type="email">
+                </div>
             </div>
-			<div class="flex flex-col justify-around items-center">
-				<div class="h-[5vw] w-[18vw] flex items-center border-b-[0.15vw]">
-					<a href="user-profile.html" class="text-[#0000007b] hover:text-[#0000007b]"><i class="fa-solid fa-user mr-[0.5vw]"></i>Profile</a>
-				</div>
-				<div class="h-[5vw] w-[18vw] flex items-center border-b-[0.15vw]">
-					<a href="user-manage-orders.html" class="text-[#0000007b] hover:text-[#0000007b]"><i class="fa-solid fa-gift mr-[0.5vw]"></i>Manage Orders</a>
-				</div>
-				<div class="h-[5vw] w-[18vw] flex items-center border-b-[0.15vw]">
-					<a href="user-manage-address.html" class="text-[#0000007b] hover:text-[#0000007b]"><i class="fa-solid fa-location-dot mr-[0.5vw]"></i>Manage Address</a>
-				</div>
-				<div class="h-[5vw] w-[18vw] flex items-center border-b-[0.15vw]">
-					<a href="gifts-&-rewards.html" class="text-[#0000007b] hover:text-[#0000007b]"><i class="fa-solid fa-circle-dollar-to-slot mr-[0.5vw]"></i>Gift & Reawards</a>
-				</div>
-				<div class="h-[5vw] w-[18vw] flex items-center">
-					<a href="body measurement.html"><i class="fa-solid fa-tape mr-[0.5vw]"></i>Body Measurement</a>
-				</div>
-			</div>
-		</div>
-    
-        <!-- body measurement -->
-        <div class="sidebar-user w-[65vw] h-[87vw] ml-[3vw] rounded-[1vw] text-[1.5vw] px-[4vw] pt-[2vw] font-semibold mb-[5vw]"> 
-            <div class="font-bold text-[2vw]">Body Measurement</div>
-                <div class="flex justify-between mt-[4vw] font-medium">
+            
+            <div class="text-[1.4vw] flex justify-between px-[4vw] mt-[2vw]">
+                <div class="w-[20vw]">
+                    <div class="font-medium">Gender<span class="text-red-600 ml-[.2vw]">*</span></div>
+                    <input class="w-[20vw] pl-[.5vw] rounded-[.2vw]" type="text" value="Female" readonly>
+                </div>
+                <div class="w-[20vw]">
+                    <div class="font-medium">Date of Birth<span class="text-red-600 ml-[.2vw]">*</span></div>
+                    <input class="w-[20vw] pl-[.5vw] rounded-[.2vw]" type="date">
+                </div>
+                <div class="w-[20vw]">
+                    <div class="font-medium">City<span class="text-red-600 ml-[.2vw]">*</span></div>
+                    <input class="w-[20vw] pl-[.5vw] rounded-[.2vw]" type="text">
+                </div>
+            </div>
+            
+            <div class="text-[1.4vw] flex justify-between px-[4vw] mt-[2vw]">
+                <div class="w-[51vw]">
+                    <div class="font-medium">Address<span class="text-red-600 ml-[.2vw]">*</span></div>
+                    <input class="w-[51vw] pl-[.5vw] rounded-[.2vw]" type="text">
+                </div>
+                <div class="w-[20vw]">
+                    <div class="font-medium">District<span class="text-red-600 ml-[.2vw]">*</span></div>
+                    <input class="w-[20vw] pl-[.5vw] rounded-[.2vw]" type="text" value="Hooghly">
+                </div>
+            </div>
+            
+            <div class="text-[1.4vw] flex justify-between px-[4vw] mt-[2vw]">
+                <div class="w-[20vw]">
+                    <div class="font-medium">State<span class="text-red-600 ml-[.2vw]">*</span></div>
+                    <input class="w-[20vw] pl-[.5vw] rounded-[.2vw]" type="text" value="West Bengal" readonly>
+                </div>
+                <div class="w-[20vw]">
+                    <div class="font-medium">PIN Code<span class="text-red-600 ml-[.2vw]">*</span></div>
+                    <input class="w-[20vw] pl-[.5vw] rounded-[.2vw]" type="date">
+                </div>
+                <div class="w-[20vw]">
+                    <div class="font-medium">Landmark</div>
+                    <input class="w-[20vw] pl-[.5vw] rounded-[.2vw]" type="text">
+                </div>
+            </div>
+        </div>
+
+        <!-- Service Details -->
+        <h1 class="text-[2vw] font-bold pl-[3vw] pt-[2vw]">Service Details</h1>
+        <div>
+            <div class="text-[1.4vw] flex justify-between px-[4vw] mt-[2vw]">
+                <div class="w-[20vw]">
+                    <div class="font-medium">Select Service<span class="text-red-600 ml-[.2vw]">*</span></div>
+                    <select class="w-[20vw] pl-[.5vw] rounded-[.2vw]">
+                        <option value="select" selected>Select</option>
+                        <option value="Custom tailoring for women">Custom tailoring for women</option>
+                        <option value="Custom tailoring for students"> Custom tailoring for students</option>
+                        <option value="Other services"> Other services</option>
+                    </select>
+                </div>
+                <div class="w-[20vw]">
+                    <div class="font-medium">Service Type<span class="text-red-600 ml-[.2vw]">*</span></div>
+                    <select class="w-[20vw] pl-[.5vw] rounded-[.2vw]">
+                        <option value="select" selected>Select</option>
+                        <option value="Suits">Suits</option>
+                        <option value="Kurti"> Kurti</option>
+                        <option value="Gown">Gown</option>
+                    </select>
+                </div>
+                <div class="w-[20vw]">
+                    <div class="font-medium">Service Place<span class="text-red-600 ml-[.2vw]">*</span></div>
+                    <select class="w-[20vw] pl-[.5vw] rounded-[.2vw]">
+                        <option value="select" selected>Select</option>
+                        <option value="walk-in (Store visit)">walk-in (Store visit)</option>
+                        <option value="Home visit">Home visit</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="text-[1.4vw] flex justify-between px-[4vw] mt-[2vw]">
+                <div class="w-[20vw]">
+                    <div class="font-medium">Appointment Date<span class="text-red-600 ml-[.2vw]">*</span></div>
+                    <input class="w-[20vw] pl-[.5vw] rounded-[.2vw]" type="date">
+                </div>
+                <div class="w-[20vw]">
+                    <div class="font-medium">Appointment Time<span class="text-red-600 ml-[.2vw]">*</span></div>
+                    <select class="w-[20vw] pl-[.5vw] rounded-[.2vw]">
+                        <option value="select" selected>Select</option>
+                        <option value="Suits">Suits</option>
+                        <option value="Kurti"> Kurti</option>
+                        <option value="Gown">Gown</option>
+                    </select>
+                </div>
+                <div class="w-[20vw]"></div>
+            </div>
+        </div>
+
+        <!-- Body Measurement show/hide  -->
+        <div class="px-[4vw] mt-[2vw] text-[1.4vw] font-medium">
+            <span>Do you know your Body Measurement?</span>
+            <input class="mx-[1vw] h-[1.4vw] w-[1.4vw] align-middle" type="radio" name="status" id="bm-show">Yes
+            <input class="mx-[1vw] h-[1.4vw] w-[1.4vw] align-middle" type="radio" name="status" id="bm-hide">No
+        </div>
+
+        <!-- Body Measurement -->
+        <div class="px-[4vw] mt-[2vw] text-[1.4vw] font-semibold mb-[5vw] hidden" id="bm-body">
+            <h1 class="text-[2vw] font-bold pt-[2vw]">Body Measurement</h1>
+                <div class="flex justify-between mt-[2vw] font-medium">
                     <div class="w-[12vw]">
                         <div>Shoulder
                             <a href="#" data-bs-toggle="modal" data-bs-target="#shoulder"><i class="fa-solid fa-circle-info"></i></a>
                         </div>
                         <!-- <input class="border-b-[0.2vw] w-[7vw] pl-[.5vw]" placeholder="inch" type="text"> -->
-                        <select class="border-b-[0.2vw] w-[7vw] pl-[.5vw]" name="" id="">
-							<option value="select">Select</option>
-							<option value="20">20</option>
-							<option value="21">21</option>
-							<option value="22">22</option>
-							<option value="23">23</option>
-							<option value="24">24</option>
-							<option value="25">25</option>
-							<option value="26">26</option>
-							<option value="27">27</option>
-							<option value="28">28</option>
-							<option value="29">29</option>
-							<option value="30">30</option>
-						</select>
+                        <select class="w-[10vw] pl-[.5vw]" name="" id="">
+                            <option value="select">Select</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                            <option value="25">25</option>
+                            <option value="26">26</option>
+                            <option value="27">27</option>
+                            <option value="28">28</option>
+                            <option value="29">29</option>
+                            <option value="30">30</option>
+                        </select>
                     </div>
                     <div class="w-[12vw]">
                         <div>Chest
@@ -251,11 +353,10 @@
                         <input class="border-b-[0.2vw] w-[7vw] pl-[.5vw]" placeholder="inch" type="text">
                     </div>
                 </div>
-                <button type="submit" class="bg-[#0074D6] text-white h-[3.5vw] w-[8vw] text-[1.5vw] rounded-[0.5vw] ml-[49vw] font-semibold mt-[3vw]">Save</button>
-            </div>
         </div>
+        <button type="submit" class="bg-[#0074D6] text-white h-[3.5vw] w-[8.8vw] text-[1.4vw] rounded-[0.5vw] font-semibold mt-[3vw] ml-[4vw] mb-[2vw]">Submit</button>
+        <button onclick="location.href='index.html'" type="submit" class="bg-[#0000007b] text-white h-[3.5vw] w-[8.8vw] text-[1.4vw] rounded-[0.5vw] font-semibold mt-[3vw] ml-[2vw] mb-[2vw]">Close</button>
     </div>
-
 
 
 
@@ -838,6 +939,7 @@
 </div>
 <!-- Wearing Waist to Knee end -->
 
+    
     <!-- up arrow navigation -->
     <a href="#" class="arrow-hide" id="arrow-nav">
         <div class="up-arrow">
@@ -856,5 +958,16 @@
 
     <!-- navbar scroll js -->
     <script src="js/scroll.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("#bm-show").click(function(){
+                $("#bm-body").slideDown("slow");
+            });
+            $("#bm-hide").click(function(){
+                $("#bm-body").slideUp("slow");
+            });
+        });
+    </script>
 </body>
 </html>
